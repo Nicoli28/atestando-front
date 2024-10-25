@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - Stefanini Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/stefanini-logo.png" alt="Stefanini GROUP">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="suporte.html">Suporte</a>
+        </nav>
+        <a href="cadastro.html" class="add-button">ADD</a>
+    </header>
+    <main>
+        <p class="info-text">Para relatar um problema ou dar uma sugestão, preencha corretamente todas as informações abaixo:</p>
+        <form id="suporteForm">
+            <input type="text" placeholder="Nome completo" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea placeholder="Mensagem" required></textarea>
+            <select required>
+                <option value="">Selecione a classificação do chamado</option>
+                <option value="problema">Problema</option>
+                <option value="sugestao">Sugestão</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

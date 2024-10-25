@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Stefanini Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/stefanini-logo.png" alt="Stefanini GROUP">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="suporte.html">Suporte</a>
+        </nav>
+        <a href="cadastro.html" class="add-button">ADD</a>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" placeholder="Pesquise usando a IA">
+            <button class="filter-button">&#9881;</button>
+        </div>
+        <div class="card-grid">
+            <!-- Estrutura de um card exemplo -->
+            <div class="card" onclick="abrirDetalhesCard()">
+                <p class="segment">Segmento</p>
+                <img src="images/logo1.png" alt="Logo Cliente">
+                <p class="service-type">Tipo de Serviço</p>
+            </div>
+        </div>
+        <!-- Modal para detalhes do card -->
+        <div class="modal" id="card-details">
+            <div class="modal-content">
+                <span class="close-button" onclick="fecharDetalhesCard()">&times;</span>
+                <img src="images/logo1.png" alt="Logo Cliente">
+                <h3>Nome do Cliente</h3>
+                <p>Número do contrato: 12345</p>
+                <p>Data de assinatura: 01/01/2023</p>
+                <p>Vigência: 01/01/2024</p>
+                <p>Situação: Ativo</p>
+                <p>Última atualização: 15/10/2024</p>
+                <p>Objeto principal: Desenvolvimento de Software</p>
+                <p>Diretor de Delivery: João Silva</p>
+                <p>Versão Healthcheck: 1.0</p>
+                <p>Área: Tecnologia</p>
+                <p>Linguagens utilizadas: JavaScript, HTML, CSS</p>
+                <p>Observações: Nenhuma</p>
+                <p>Cadastrado por: Fernanda Pelatti de Camargo</p>
+                <p>E-mail: fernanda@empresa.com</p>
+                <div class="pdf-alert">
+                    <span>&#128462;</span> Atenção! Este arquivo é protegido por senha!
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
